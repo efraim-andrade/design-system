@@ -1,11 +1,13 @@
 {
   "name": "@molao-ui/eslint-config",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "ISC",
   "main": "index.js",
   "devDependencies": {
+    "eslint": "^8.33.0"
+  },
+  "dependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
-    "eslint": "^8.33.0",
     "eslint-plugin-import-helpers": "^1.3.1"
   }
 }
