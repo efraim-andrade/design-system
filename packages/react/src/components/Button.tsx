@@ -5,7 +5,7 @@ import { styled } from '../styles'
 export const Button = styled('button', {
   all: 'unset',
 
-  minWidth: 120,
+  minWidth: 110,
   padding: '0 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',

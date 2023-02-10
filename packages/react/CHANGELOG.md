@@ -1,5 +1,11 @@
 # @molao-ui/react
 
+## 2.1.1
+
+### Patch Changes
+
+- Changing min width of button
+
 ## 2.1.0
 
 ### Minor Changes
