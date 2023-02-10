@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@molao-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -29,10 +29,10 @@
     "vite": "^4.1.1"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@molao-ui/eslint-config": "*",
+    "@molao-ui/react": "*",
+    "@molao-ui/tokens": "*",
+    "@molao-ui/ts-config": "*",
     "@storybook/addon-a11y": "^6.5.16",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
