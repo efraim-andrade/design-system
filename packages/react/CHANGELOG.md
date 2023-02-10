@@ -1,5 +1,11 @@
 # @molao-ui/react
 
+## 2.1.2
+
+### Patch Changes
+
+- change import space
+
 ## 2.1.1
 
 ### Patch Changes
