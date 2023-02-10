@@ -1,4 +1,5 @@
 import * as Checkbox from '@radix-ui/react-checkbox'
+
 import { keyframes, styled } from '../../styles'
 
 export const CheckboxContainer = styled(Checkbox.Root, {
@@ -23,7 +24,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
     backgroundColor: '$ignite300',
   },
 
-  '&:focus': {
+  '&:focus, &[data-state="checked"]': {
     border: '2px solid $ignite300',
   },
 })
