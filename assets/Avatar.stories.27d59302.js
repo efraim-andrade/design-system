@@ -1,0 +1,2 @@
+import{A as t}from"./index.886b7c2b.js";import"./index.e1bf4588.js";import"./iframe.f6e71140.js";import"./index.e8311798.js";import"./jsx-runtime.c00bfbfe.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/efraim-andrade.png",alt:"Efraim Andrade"},argTypes:{src:{control:{type:"text"}}}},m={},p={args:{src:void 0}},c=["Primary","WithFallback"];export{m as Primary,p as WithFallback,c as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories.27d59302.js.map
