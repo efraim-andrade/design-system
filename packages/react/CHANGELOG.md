@@ -1,5 +1,11 @@
 # @molao-ui/react
 
+## 2.1.3
+
+### Patch Changes
+
+- fix textInput ref
+
 ## 2.1.2
 
 ### Patch Changes

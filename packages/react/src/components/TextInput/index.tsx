@@ -9,12 +9,12 @@ export interface TextInputProps
 }
 
 export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
-  ({ prefix, size, ...rest }: TextInputProps) => {
+  ({ prefix, size, ...rest }, ref) => {
     return (
       <TextInputContainer size={size}>
         {!!prefix && <Prefix>{prefix}</Prefix>}
 
-        <Input {...rest} />
+        <Input ref={ref} {...rest} />
       </TextInputContainer>
     )
   },
