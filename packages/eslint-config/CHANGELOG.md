@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 3.1.0
+
+### Minor Changes
+
+- Added the eslint perfectionist to better ordenate everything
+
 ## 3.0.2
 
 ### Patch Changes
