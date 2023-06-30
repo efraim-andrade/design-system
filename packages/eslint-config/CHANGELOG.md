@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 3.1.1
+
+### Patch Changes
+
+- Fix the eslint-plugin-perfercionist dependency
+
 ## 3.1.0
 
 ### Minor Changes
