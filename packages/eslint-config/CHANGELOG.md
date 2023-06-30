@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 3.1.2
+
+### Patch Changes
+
+- added the typescript recommended plugins
+
 ## 3.1.1
 
 ### Patch Changes

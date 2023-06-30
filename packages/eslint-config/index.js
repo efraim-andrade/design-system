@@ -2,6 +2,8 @@ module.exports = {
   extends: [
     "@rocketseat/eslint-config/react",
     "plugin:perfectionist/recommended-line-length",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   plugins: ["import-helpers", "perfectionist"],
   rules: {
