@@ -5,17 +5,9 @@ module.exports = {
     "plugin:perfectionist/recommended-line-length",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
   ],
   plugins: ["import-helpers", "perfectionist", "@typescript-eslint"],
-  overrides: [
-    {
-      files: ["*.ts", "*.tsx"], // Your TypeScript files extension
-      extends: ["plugin:@typescript-eslint/recommended"],
-      parserOptions: {
-        project: ["./tsconfig.json"], // Specify it only for TypeScript files
-      },
-    },
-  ],
   rules: {
     "perfectionist/sort-object-types": [
       "error",

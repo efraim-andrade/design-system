@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 3.1.4
+
+### Patch Changes
+
+- Removing some unused rules and added prettier
+
 ## 3.1.3
 
 ### Patch Changes
