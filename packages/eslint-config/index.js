@@ -1,11 +1,21 @@
 module.exports = {
+  parser: "@typescript-eslint/parser",
   extends: [
     "@rocketseat/eslint-config/react",
     "plugin:perfectionist/recommended-line-length",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
-  plugins: ["import-helpers", "perfectionist"],
+  plugins: ["import-helpers", "perfectionist", "@typescript-eslint"],
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"], // Your TypeScript files extension
+      extends: ["plugin:@typescript-eslint/recommended"],
+      parserOptions: {
+        project: ["./tsconfig.json"], // Specify it only for TypeScript files
+      },
+    },
+  ],
   rules: {
     "perfectionist/sort-object-types": [
       "error",
