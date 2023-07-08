@@ -8,6 +8,12 @@ module.exports = {
     "prettier",
   ],
   plugins: ["import-helpers", "perfectionist", "@typescript-eslint"],
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      extends: ["plugin:@typescript-eslint/recommended"],
+    },
+  ],
   rules: {
     "perfectionist/sort-object-types": [
       "error",

@@ -2,6 +2,7 @@ import { MultiStepContainer, Steps, Label, Step } from './styles'
 
 export interface MultiStepProps {
   currentStep?: number
+  
   size: number
 }
 
