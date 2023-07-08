@@ -1,21 +1,20 @@
-import { MultiStepContainer, Steps, Label, Step } from './styles'
+import { Step, Label, Steps, MultiStepContainer } from './styles'
 
 export interface MultiStepProps {
   currentStep?: number
-  
   size: number
 }
 
-export function MultiStep({ currentStep = 1, size }: MultiStepProps) {
+export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
   return (
-    <MultiStepContainer>
+    <MultiStepContainer style={{ margin: 20 }}>
       <Label>
         Passo {currentStep} de {size}
       </Label>
 
       <Steps css={{ '--steps-size': size }}>
         {Array.from({ length: size }, (_, i) => i + 1).map((step) => {
-          return <Step active={currentStep >= step} key={step} />
+          return <Step key={step} active={currentStep >= step} />
         })}
       </Steps>
     </MultiStepContainer>

@@ -1,5 +1,11 @@
 # @molao-ui/react
 
+## 2.1.4
+
+### Patch Changes
+
+- Added a file to local monorepo eslint
+
 ## 2.1.3
 
 ### Patch Changes

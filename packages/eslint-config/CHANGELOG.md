@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 3.1.5
+
+### Patch Changes
+
+- Added a file to local monorepo eslint
+
 ## 3.1.4
 
 ### Patch Changes
