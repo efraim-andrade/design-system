@@ -1,13 +1,21 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   extends: [
-    "@rocketseat/eslint-config/react",
-    "plugin:perfectionist/recommended-line-length",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
     "prettier",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
   ],
-  plugins: ["import-helpers", "perfectionist", "@typescript-eslint"],
+  plugins: [
+    "react",
+    "import-helpers",
+    "react-hooks",
+    "perfectionist",
+    "@tanstack/query",
+    "jest-formatting",
+    "jest",
+  ],
   overrides: [
     {
       env: {
@@ -24,111 +32,41 @@ module.exports = {
     },
   ],
   rules: {
-    "@typescript-eslint/await-thenable": "error",
+    "no-console": "warn",
+    "linebreak-style": "off",
 
-    "perfectionist/sort-object-types": [
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/unbound-method": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-empty-function": "off",
+
+    "react/react-in-jsx-scope": "off",
+
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+
+    "tailwindcss/no-custom-classname": "off",
+
+    "jest/valid-title": "error",
+    "jest/valid-expect": "error",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-duplicate-hooks": "error",
+    "jest/no-identical-title": "error",
+    "jest-formatting/padding-around-all": 2,
+    "jest/require-top-level-describe": "error",
+    "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
+
+    "prettier/prettier": [
       "error",
       {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-array-includes": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-classes": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-enums": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-exports": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-interfaces": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-jsx-props": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-map-elements": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-named-exports": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-named-imports": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-object-types": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-objects": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        "partition-by-comment": true,
-        // "always-on-top": ["id"],
-      },
-    ],
-    "perfectionist/sort-union-types": [
-      "error",
-      {
-        type: "line-length",
-        order: "asc",
-        // "always-on-top": ["id"],
+        endOfLine: "auto",
       },
     ],
 
@@ -142,6 +80,99 @@ module.exports = {
           ["parent", "sibling", "index"],
         ],
         alphabetize: { order: "ignore", ignoreCase: true },
+      },
+    ],
+
+    "perfectionist/sort-object-types": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-array-includes": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-classes": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-enums": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-exports": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-interfaces": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-jsx-props": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-map-elements": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-named-exports": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-named-imports": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-object-types": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+      },
+    ],
+    "perfectionist/sort-objects": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
+        "partition-by-comment": true,
+      },
+    ],
+    "perfectionist/sort-union-types": [
+      "error",
+      {
+        type: "line-length",
+        order: "asc",
       },
     ],
   },

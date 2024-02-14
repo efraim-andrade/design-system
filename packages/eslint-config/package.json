@@ -1,15 +1,24 @@
 {
-  "name": "@molao-ui/eslint-config",
-  "version": "3.1.5",
-  "license": "ISC",
-  "main": "index.js",
+  "dependencies": {
+    "@tanstack/eslint-plugin-query": "^4.32.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-perfectionist": "^1.5.1",
+    "eslint-plugin-prettier": "^5.0.0-alpha.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-testing-library": "^5.11.0",
+    "prettier": "^3.0.1"
+  },
   "devDependencies": {
     "eslint": "^8.33.0"
   },
-  "dependencies": {
-    "@rocketseat/eslint-config": "^1.2.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import-helpers": "^1.3.1",
-    "eslint-plugin-perfectionist": "^1.4.0"
-  }
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@molao-ui/eslint-config",
+  "version": "3.1.5"
 }
