@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- c9ef9c2: sync with the latest package configs of the sales journey version
+
 ## 3.1.5
 
 ### Patch Changes
