@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.1
+
+### Patch Changes
+
+- change the import sort library to be the eslint-perfectionist
+
 ## 4.0.0
 
 ### Major Changes

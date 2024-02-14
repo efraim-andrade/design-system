@@ -70,18 +70,18 @@ module.exports = {
       },
     ],
 
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        newlinesBetween: "always",
-        groups: [
-          ["/^react/", "module"],
-          "/^~/",
-          ["parent", "sibling", "index"],
-        ],
-        alphabetize: { order: "ignore", ignoreCase: true },
-      },
-    ],
+    // "import-helpers/order-imports": [
+    //   "warn",
+    //   {
+    //     newlinesBetween: "always",
+    //     groups: [
+    //       ["/^react/", "module"],
+    //       "/^~/",
+    //       ["parent", "sibling", "index"],
+    //     ],
+    //     alphabetize: { order: "ignore", ignoreCase: true },
+    //   },
+    // ],
 
     "perfectionist/sort-object-types": [
       "error",
@@ -150,7 +150,14 @@ module.exports = {
       "error",
       {
         type: "line-length",
-        order: "asc",
+        order: "desc",
+      },
+    ],
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        type: "line-length",
+        order: "desc",
       },
     ],
     "perfectionist/sort-object-types": [
