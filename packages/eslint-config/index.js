@@ -150,14 +150,27 @@ module.exports = {
       "error",
       {
         type: "line-length",
-        order: "desc",
+        order: "asc",
       },
     ],
     "perfectionist/sort-imports": [
       "error",
       {
         type: "line-length",
-        order: "desc",
+        order: "asc",
+        groups: [
+          ["type", "builtin", "external", "unknown"],
+          ["internal-type", "internal"],
+          [
+            "parent-type",
+            "sibling-type",
+            "index-type",
+            "parent",
+            "sibling",
+            "index",
+            "object",
+          ],
+        ],
       },
     ],
     "perfectionist/sort-object-types": [

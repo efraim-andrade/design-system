@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.2
+
+### Patch Changes
+
+- add more organization to import
+
 ## 4.0.1
 
 ### Patch Changes
