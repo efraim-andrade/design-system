@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.5
+
+### Patch Changes
+
+- add react-hooks plugin
+
 ## 4.0.4
 
 ### Patch Changes
