@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.4
+
+### Patch Changes
+
+- fix the dependency install of eslint-plugin-react
+
 ## 4.0.3
 
 ### Patch Changes
