@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.3
+
+### Patch Changes
+
+- add remaining library to works without install nothing more
+
 ## 4.0.2
 
 ### Patch Changes
