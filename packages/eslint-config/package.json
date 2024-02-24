@@ -22,5 +22,5 @@
   "license": "ISC",
   "main": "index.js",
   "name": "@molao-ui/eslint-config",
-  "version": "4.0.7"
+  "version": "4.0.8"
 }

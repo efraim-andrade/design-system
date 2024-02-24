@@ -112,7 +112,7 @@ module.exports = {
         order: 'asc'
       }
     ],
-    'perfectionist/sort-map-elements': [
+    'perfectionist/sort-maps': [
       'error',
       {
         type: 'line-length',

@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.8
+
+### Patch Changes
+
+- fix prop name
+
 ## 4.0.7
 
 ### Patch Changes
