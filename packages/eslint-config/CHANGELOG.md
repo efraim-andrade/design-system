@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.6
+
+### Patch Changes
+
+- add partition by new line
+
 ## 4.0.5
 
 ### Patch Changes
