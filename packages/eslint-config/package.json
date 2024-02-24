@@ -7,7 +7,7 @@
     "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-n": "^16.0.1",
-    "eslint-plugin-perfectionist": "^1.5.1",
+    "eslint-plugin-perfectionist": "^2.5.0",
     "eslint-plugin-prettier": "^5.0.0-alpha.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
@@ -22,5 +22,5 @@
   "license": "ISC",
   "main": "index.js",
   "name": "@molao-ui/eslint-config",
-  "version": "4.0.6"
+  "version": "4.0.7"
 }

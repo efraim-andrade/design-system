@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.0.7
+
+### Patch Changes
+
+- Update perfectionist
+
 ## 4.0.6
 
 ### Patch Changes
