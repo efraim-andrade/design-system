@@ -7,7 +7,7 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'plugin:@tanstack/eslint-plugin-query/recommended'
   ],
-  plugins: ['react', 'import-helpers', 'react-hooks', 'perfectionist', '@tanstack/query', 'jest-formatting', 'jest'],
+  plugins: ['react', 'import-helpers', 'react-hooks', 'perfectionist', '@tanstack/query', 'jest-formatting', 'jest', 'testing-library'],
   overrides: [
     {
       env: {
@@ -16,7 +16,6 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       extends: [
         'plugin:@typescript-eslint/recommended'
-        // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
       parserOptions: {
         project: ['./tsconfig.json']
@@ -27,18 +26,19 @@ module.exports = {
     'no-console': 'warn',
     'linebreak-style': 'off',
 
-    '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/unbound-method': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-empty-function': 'off',
-    '@typescript-eslint/consistent-type-imports': 'off',
-    '@typescript-eslint/no-confusing-void-expression': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-misused-promises': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
-    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/no-confusing-void-expression': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
 
+    'react/jsx-newline': 'warn',
     'react/react-in-jsx-scope': 'off',
 
     'react-hooks/rules-of-hooks': 'error',
@@ -55,119 +55,155 @@ module.exports = {
     'jest/require-top-level-describe': 'error',
     'jest/consistent-test-it': ['error', { fn: 'it', withinDescribe: 'it' }],
 
+    'testing-library/prefer-user-event': 'warn',
+    'testing-library/no-debugging-utils': 'warn',
+    'testing-library/await-async-queries': 'warn',
+    'testing-library/prefer-screen-queries': 'warn',
+    'testing-library/prefer-find-by': 'error',
+    'testing-library/no-unnecessary-act': 'error',
+    'testing-library/no-await-sync-events': 'error',
+
+    'padding-line-between-statements': [
+      'error',
+      { prev: '*', next: 'return', blankLine: 'always' },
+      { prev: '*', next: 'function', blankLine: 'always' },
+      { prev: '*', next: 'if', blankLine: 'always' },
+      { next: '*', blankLine: 'always', prev: 'multiline-const' },
+      { next: '*', blankLine: 'always', prev: 'multiline-let' },
+      { next: '*', prev: 'block', blankLine: 'always' },
+      { prev: '*', next: 'block', blankLine: 'always' },
+      { next: '*', prev: 'block-like', blankLine: 'always' },
+      { prev: '*', next: 'block-like', blankLine: 'always' },
+      { next: '*', prev: 'expression', blankLine: 'always' },
+    ],
+
     'prettier/prettier': [
       'error',
       {
-        endOfLine: 'auto'
-      }
+        endOfLine: 'auto',
+        singleQuote: true,
+        arrowParens: 'avoid',
+        bracketSpacing: true,
+        trailingComma: 'all',
+        bracketSameLine: true,
+      },
     ],
 
-    'perfectionist/sort-object-types': [
+    'perfectionist/sort-maps': [
       'error',
       {
+        order: 'asc',
         type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-array-includes': [
-      'error',
-      {
-        type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-classes': [
-      'error',
-      {
-        type: 'line-length',
-        order: 'asc'
-      }
+      },
     ],
     'perfectionist/sort-enums': [
       'error',
       {
+        order: 'asc',
+        type: 'alphabetical',
+      },
+    ],
+    'perfectionist/sort-classes': [
+      'error',
+      {
+        order: 'asc',
         type: 'line-length',
-        order: 'asc'
-      }
+      },
     ],
     'perfectionist/sort-exports': [
       'error',
       {
-        type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-interfaces': [
-      'error',
-      {
-        type: 'line-length',
         order: 'asc',
-        'partition-by-new-line': true
-      }
+        type: 'line-length',
+      },
     ],
     'perfectionist/sort-jsx-props': [
       'error',
       {
-        type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-maps': [
-      'error',
-      {
-        type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-named-exports': [
-      'error',
-      {
-        type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-named-imports': [
-      'error',
-      {
-        type: 'line-length',
-        order: 'asc'
-      }
-    ],
-    'perfectionist/sort-imports': [
-      'error',
-      {
-        type: 'line-length',
         order: 'asc',
-        groups: [
-          ['type', 'builtin', 'external', 'unknown'],
-          ['internal-type', 'internal'],
-          ['parent-type', 'sibling-type', 'index-type', 'parent', 'sibling', 'index', 'object']
-        ]
-      }
-    ],
-    'perfectionist/sort-object-types': [
-      'error',
-      {
         type: 'line-length',
-        order: 'asc',
-        'partition-by-new-line': true
-      }
-    ],
-    'perfectionist/sort-objects': [
-      'error',
-      {
-        type: 'line-length',
-        order: 'asc',
-        'partition-by-comment': true,
-        'partition-by-new-line': true
-      }
+      },
     ],
     'perfectionist/sort-union-types': [
       'error',
       {
+        order: 'asc',
         type: 'line-length',
-        order: 'asc'
-      }
-    ]
+      },
+    ],
+    'perfectionist/sort-object-types': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+      },
+    ],
+    'perfectionist/sort-named-exports': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+      },
+    ],
+    'perfectionist/sort-named-imports': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+      },
+    ],
+    'perfectionist/sort-array-includes': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+      },
+    ],
+    'perfectionist/sort-interfaces': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+        'partition-by-new-line': true,
+      },
+    ],
+    'perfectionist/sort-object-types': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+        'partition-by-new-line': true,
+      },
+    ],
+    'perfectionist/sort-objects': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+        'partition-by-comment': true,
+        'partition-by-new-line': true,
+      },
+    ],
+    'perfectionist/sort-imports': [
+      'error',
+      {
+        order: 'asc',
+        type: 'line-length',
+        'internal-pattern': ['@*/**', '@*'],
+        groups: [
+          ['type', 'builtin', 'external', 'unknown'],
+          ['internal-type', 'internal'],
+          [
+            'parent-type',
+            'sibling-type',
+            'index-type',
+            'parent',
+            'sibling',
+            'index',
+            'object',
+          ],
+        ],
+      },
+    ],
   }
 }

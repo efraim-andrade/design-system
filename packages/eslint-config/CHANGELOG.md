@@ -1,5 +1,11 @@
 # @molao-ui/eslint-config
 
+## 4.1.0
+
+### Minor Changes
+
+- Add new testing-library, perfectionist, typescript and react rules.
+
 ## 4.0.8
 
 ### Patch Changes

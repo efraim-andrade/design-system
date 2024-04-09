@@ -13,7 +13,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "eslint-plugin-testing-library": "^5.11.0",
+    "eslint-plugin-testing-library": "^5.11.1",
     "prettier": "^3.0.1"
   },
   "devDependencies": {
@@ -22,5 +22,5 @@
   "license": "ISC",
   "main": "index.js",
   "name": "@molao-ui/eslint-config",
-  "version": "4.0.8"
+  "version": "4.1.0"
 }
