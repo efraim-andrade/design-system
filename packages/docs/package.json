@@ -1,5 +1,5 @@
 {
-  "name": "@molao-ui/docs",
+  "name": "@eamj-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -30,10 +30,10 @@
     "vite": "^4.1.1"
   },
   "dependencies": {
-    "@molao-ui/eslint-config": "*",
-    "@molao-ui/react": "*",
-    "@molao-ui/tokens": "*",
-    "@molao-ui/ts-config": "*",
+    "@eamj-ui/eslint-config": "*",
+    "@eamj-ui/react": "*",
+    "@eamj-ui/tokens": "*",
+    "@eamj-ui/ts-config": "*",
     "@storybook/addon-a11y": "^6.5.16",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",

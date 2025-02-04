@@ -1,5 +1,5 @@
 import { createStitches, defaultThemeMap } from '@stitches/react'
-import * as tokens from '@molao-ui/tokens'
+import * as tokens from '@eamj-ui/tokens'
 
 export const {
   css,

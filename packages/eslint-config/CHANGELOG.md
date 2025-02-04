@@ -1,4 +1,10 @@
-# @molao-ui/eslint-config
+# @eamj-ui/eslint-config
+
+## 5.0.0
+
+### Major Changes
+
+- changed packages name
 
 ## 4.0.2
 

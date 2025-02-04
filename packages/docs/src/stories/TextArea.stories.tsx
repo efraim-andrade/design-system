@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, Text, TextArea, TextAreaProps } from '@molao-ui/react'
+import { Box, Text, TextArea, TextAreaProps } from '@eamj-ui/react'
 
 export default {
   title: 'Form/TextArea',

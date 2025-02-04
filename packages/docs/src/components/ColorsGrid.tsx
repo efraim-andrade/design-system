@@ -1,4 +1,4 @@
-import { colors } from '@molao-ui/tokens'
+import { colors } from '@eamj-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

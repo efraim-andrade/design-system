@@ -1,4 +1,10 @@
-# @molao-ui/ts-config
+# @eamj-ui/ts-config
+
+## 4.0.0
+
+### Major Changes
+
+- changed packages name
 
 ## 3.0.0
 

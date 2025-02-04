@@ -1,4 +1,10 @@
-# @molao-ui/react
+# @eamj-ui/react
+
+## 3.0.0
+
+### Major Changes
+
+- changed packages name
 
 ## 2.1.4
 

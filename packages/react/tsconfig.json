@@ -1,4 +1,4 @@
 {
-  "extends": "@molao-ui/ts-config/react.json",
+  "extends": "@eamj-ui/ts-config/react.json",
   "include": ["src"]
 }

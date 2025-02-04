@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, Text, Checkbox, CheckboxProps } from '@molao-ui/react'
+import { Box, Text, Checkbox, CheckboxProps } from '@eamj-ui/react'
 
 export default {
   title: 'Form/Checkbox',
