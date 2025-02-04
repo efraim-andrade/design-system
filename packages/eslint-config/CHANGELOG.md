@@ -6,6 +6,48 @@
 
 - changed packages name
 
+## 4.1.0
+
+### Minor Changes
+
+- Add new testing-library, perfectionist, typescript and react rules.
+
+## 4.0.8
+
+### Patch Changes
+
+- fix prop name
+
+## 4.0.7
+
+### Patch Changes
+
+- Update perfectionist
+
+## 4.0.6
+
+### Patch Changes
+
+- add partition by new line
+
+## 4.0.5
+
+### Patch Changes
+
+- add react-hooks plugin
+
+## 4.0.4
+
+### Patch Changes
+
+- fix the dependency install of eslint-plugin-react
+
+## 4.0.3
+
+### Patch Changes
+
+- add remaining library to works without install nothing more
+
 ## 4.0.2
 
 ### Patch Changes
