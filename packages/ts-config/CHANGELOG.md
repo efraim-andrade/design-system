@@ -1,4 +1,10 @@
-# @eamj-ui/ts-config
+# @eamj/ts-config
+
+## 5.0.0
+
+### Major Changes
+
+- change package name
 
 ## 4.0.0
 

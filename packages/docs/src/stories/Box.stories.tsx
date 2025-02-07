@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text } from '@eamj-ui/react'
+import { Box, BoxProps, Text } from '@eamj/react'
 
 export default {
   title: 'Box',

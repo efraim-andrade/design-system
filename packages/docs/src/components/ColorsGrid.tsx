@@ -1,4 +1,4 @@
-import { colors } from '@eamj-ui/tokens'
+import { colors } from '@eamj/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

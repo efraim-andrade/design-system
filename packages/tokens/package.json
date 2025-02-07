@@ -1,6 +1,6 @@
 {
-  "name": "@eamj-ui/tokens",
-  "version": "3.0.0",
+  "name": "@eamj/tokens",
+  "version": "4.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@eamj-ui/ts-config": "*",
-    "@eamj-ui/eslint-config": "*",
+    "@eamj/ts-config": "*",
+    "@eamj/eslint-config": "*",
     "tsup": "^6.5.0",
     "typescript": "^4.9.5"
   }

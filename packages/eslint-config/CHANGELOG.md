@@ -1,4 +1,10 @@
-# @eamj-ui/eslint-config
+# @eamj/eslint-config
+
+## 6.0.0
+
+### Major Changes
+
+- change package name
 
 ## 5.0.0
 

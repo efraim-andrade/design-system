@@ -8,9 +8,9 @@
   },
   "description": "",
   "devDependencies": {
-    "@eamj-ui/eslint-config": "*",
-    "@eamj-ui/tokens": "*",
-    "@eamj-ui/ts-config": "*",
+    "@eamj/eslint-config": "*",
+    "@eamj/tokens": "*",
+    "@eamj/ts-config": "*",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "react": "^18.2.0",
@@ -24,12 +24,12 @@
   "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "name": "@eamj-ui/react",
+  "name": "@eamj/react",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "types": "dist/index.d.ts",
-  "version": "3.0.0"
+  "version": "4.0.0"
 }

@@ -1,4 +1,10 @@
-# @eamj-ui/tokens
+# @eamj/tokens
+
+## 4.0.0
+
+### Major Changes
+
+- change package name
 
 ## 3.0.0
 

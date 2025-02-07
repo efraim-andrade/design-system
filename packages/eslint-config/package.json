@@ -21,6 +21,6 @@
   },
   "license": "ISC",
   "main": "index.js",
-  "name": "@eamj-ui/eslint-config",
-  "version": "5.0.0"
+  "name": "@eamj/eslint-config",
+  "version": "6.0.0"
 }

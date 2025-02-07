@@ -1,4 +1,10 @@
-# @eamj-ui/react
+# @eamj/react
+
+## 4.0.0
+
+### Major Changes
+
+- change package name
 
 ## 3.0.0
 
